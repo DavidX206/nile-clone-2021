@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+  font-family: 'Gilda Display', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container-nav {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  top:0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.container-item {
+    margin-top: 18px;
+    margin-left: 120px;
+  padding: 5px;
+}
+
+.container-ul {
+    margin-top: 28px;
+  margin-right: 170px;
+  display: flex;
+}
+
+.item {
+  font-family: 'Gilda display', sans-serif;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 12px;
+}
+
+.item:hover{
+  color: #1c4da1;
+}
+
+.glove:hover{
+  cursor: pointer;
+}
+
+.about{
+  color: #1c4da1;
+}
+
+.attention{
+  margin-top: 90px;
+    background-color: #1e4da1;
+    width: 100%;
+    text-align: center;
+    height: 85px;
+}
+
+.attention p{
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 17px;
+}
+
+.attention p:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container-item {
+      margin-left: 20px;
+    }
+}
+
+.fa-angle-down{
+  font-weight: 900px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.fa-grip-lines {
+  position: relative;
+  bottom: 5px;
+  left: 10px;
+  font-size: 35px;
+}
+
+
+.carousel-item{
+  height: 500px;
+  background-color: black;
+  color: white; 
+  position: relative;
+  padding: 50px 65px;
+}
+
+.container{
+  position: absolute;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.overlay-image{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.carousel-indicators li{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.btn-primary,.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary:visited{
+  background-color: #1c4da1 !important;
+  border-color: #1c4da1 !important;
+  border-radius: 0% !important;
+}
+
+.btn{
+  width: 170px;
+  height: 60px;
+  margin: auto;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.degrees{
+  display: flex;
+  justify-content: center;
+  padding: 117px 0 120px;
+}
+
+.degree{
+  flex-basis: 30%;
+  background-color: #1e4da1;
+  margin-right: 15px;
+  border-radius: 3%;
+  text-align: center;
+  padding: 20px;
+}
+
+.program{
+  color: white;
+  font-size: 24px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.line{
+  margin-top: 50px;
+  border-bottom: 1px solid white;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  font-family: 'Manrope', sans-serif;
+  padding: 10px 0 17px;
+}
+
+.learn{
+  margin-top: 45px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.learn:hover{
+  cursor: pointer;
+}
+.chat{
+  margin-right: 30px;
+  font-size: 40px;
+  font-family: 'Gilda display', sans-serif;
+  text-align: center;
+  color: #000E27;
+  margin-bottom: 50px;
+}
+
+.students{
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.student{
+  border: 1px solid #e4e8eb;
+  flex-basis: 25%;
+  margin-right: 50px;
+  border-radius: 4%;
+  position: relative;
+}
+
+.hours{
+  background-color: #1e4da1;
+  font-size: 12px;
+  height: 40px;
+  font-family: 'Open sans', sans-serif;
+  padding: 1px 15px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 10px;
+}
+
+
+.picture{
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 10px;
+  right: 110px;
+}
+
+.sname{
+  padding: 0 20px;
+  margin-top: 90px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.dept{
+  font-size: 18px;
+  margin: 0 0 15px;
+  padding: 0 20px;
+  font-family: 'Open sans', sans-serif;
+  text-align: center;
+}
+
+.hail{
+  padding: 0 20px;
+  margin: 0 0 5px;
+  font-family: 'Open sans', sans-serif;
+  color: #757474;
+  font-size: 14px;
+  text-align: center;
+}
+
+.state{
+  margin: 0 0 15px;
+  padding: 0 20px;
+  color: #292929;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Open sans', sans-serif;
+}
+
+.ok{
+  margin: 22px 20px 0;
+  border-top: 1px solid #e4e8eb;
+}
+
+.with{
+  text-align: center;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.but:hover {
+  background-color: #1c4da1;
+  color: white;
+}
+
+.but{
+  height: 46px;
+  width: 200px;
+  border: 1px solid #1c4da1;
+  color: #1c4da1;
+  border-radius: 999px;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open sans', sans-serif;
+  padding: 0 30px;
+}
+
+.faculty{
+  margin-top: 35px;
+  width: 100%;
+  height: 670px;
+  padding: 0 0 0 120px;
+  background-image: url('/Nile_2021/images/faculty-sctn-img.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.f{
+  display: flex;
+}
+
+.words-container{
+  padding: 0 20px 0 0;
+  flex-basis: 30%;
+}
+
+.words{
+  margin-top: 90px;
+}
+
+.telines{
+  margin: 0 0 20px;
+}
+
+.fline{
+  font-size: 48px;
+  font-family: 'Gilda display', sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sline{
+  font-size: 20px;
+  font-family: 'Gilda display', sans-serif;
+  color: white;
+  margin: 0 0 14.4px;
+}
+
+.tline{
+  font-size: 20px;
+  font-family: 'Gilda display', sans-serif;
+  color: white;
+  margin: 0 0 14.4px;
+}
+
+.but1{
+  height: 58.58px;
+  width: 180.58px;
+  color: #ffffff;
+  border: 1px solid #1c4da1;
+  background: #1c4da1;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  padding: 17px 30px;
+}
+
+.but1 p{
+  width: 120.58;
+  height: 24.58;
+}
+
+.fdif{
+  display: flex;
+  height: 670px;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  padding: 50px 0;
+  background-color: #0000004A;
+}
+
+.fdif-item{
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.bor{
+  border-right: 1px solid white;
+}
+
+.fdif-item-inner{
+  padding: 55px 29px;
+}
+
+.fdif-item-text{
+  margin: 8px 0 16px;
+  color: white;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.fdif-item-text h3{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.fa-arrow-right{
+  visibility: hidden;
+}
+
+.fdif-item-inner:hover{
+  background-color: #1c4da1;
+}
+
+.fdif-item-inner:hover .fa-arrow-right{
+  visibility: visible;
+}
+.benefits{
+  display: flex;
+  justify-content: center;
+  padding: 117px 0 120px;
+}
+
+.benefit{
+  flex-basis: 30%;
+  background-color: #f8f9fe;
+  margin-right: 15px;
+  text-align: center;
+  padding: 78px 31px 53px;
+}
+
+.feat{
+  margin: 8px 0 38px;
+  color: #000E27;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.feat h3{
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+.feat-desc{
+  font-family: 'Manrope', sans-serif;
+  color: #3f495a;
+}
+
+.feat-desc{
+  font-size: 20px;
+}
+
+.src-pres{
+  display: flex;
+  width: 100%;
+  height: 890px;
+  background-color: #f8f9fe;
+  padding: 100px 120px 107px;
+}
+
+.speech{
+  padding: 62px 40px 62px 62px;
+  background-color: #f2f5ff;
+}
+.speech-main{
+  margin: 0 0 20px;
+}
+
+.sp1{
+  font-size: 20px;
+  font-family: 'Gilda display', sans-serif;
+  color: #000e27;
+  margin: 0 0 14.4px;
+}
+
+.speech h3{
+  font-size: 20px;
+  font-family: 'Gilda display', sans-serif;
+  color: #1c4da1;
+}
+
+.latest-news{
+  width: 100%;
+  height: 650px;
+  margin-top: 50px;
+  padding: 40px 70px;
+}
+
+.latest-news h3{
+  font-size: 40px;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.news{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-desc{
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  font-family: 'Manrope', sans-serif;
+  margin: 5px;
+  padding: 7.2px 14.4px;
+  left: 460px;
+  background: #1c4da1;
+  border-radius: 999px;
+}
+
+.news-main{
+  flex-basis: 45%;
+}
+
+.news-main h3{
+  margin-top: 25px;
+  font-size: 28px;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.ndate span{
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  color: #3f495a;
+}
+
+.news-other{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.img-desc1{
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  font-family: 'Manrope', sans-serif;
+  padding: 7.2px 14.4px;
+  background: #1c4da1;
+  border-radius: 999px;
+}
+
+.news-other h3{
+  margin-top: 40px;
+  font-size: 24px;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.snews{
+  margin-top: 30px;
+}
+
+.tnews{
+  margin-top: 30px;
+}
+
+.latest-events{
+    width: 100%;
+    height: 564.97px;
+    margin-top: 50px;
+    padding: 40px 70px;
+}
+.latest-events h3{
+  font-size: 40px;
+  font-family: 'Gilda display', sans-serif;
+}
+.events{
+  display: flex;
+  flex-wrap: wrap;
+}
+.events-main{
+  flex-basis: 50%;
+}
+
+.events-other{
+  flex-basis: 45%;
+  display: flex;
+  flex-direction:column;
+  padding: 0 0 0 50px;
+}
+
+.event-date{
+  display: flex; 
+  flex-direction: column;
+
+}
+
+.event-day{
+  flex-basis: 30%;
+  font-size: 48px;
+  font-family: 'Gilda display', sans-serif;
+  color: #1c4da1;
+}
+
+.event-month{
+  position: relative;
+  bottom: 20px;
+  font-size: 20px;
+  font-family: 'Gilda display', sans-serif;
+  color: #1c4da1;
+}
+
+.events-other h3{
+  position: relative;
+  bottom: 60px;
+  left: 40px;
+  margin-left: 50px;
+  font-size: 24px;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.sevent{
+  height: 90px;
+  position: relative;
+  bottom: 60px;
+}
+
+.tevent{
+  position: relative;
+  bottom: 60px;
+}
+
+.foevent{
+  position: relative;
+  bottom: 90px;
+}
+
+.fun{
+  width: 1349px;
+  height: 903px;
+  background-color: #f8f9fe;
+  margin: 90px 0 0;
+}
+
+.clubs{
+  display: flex;
+  width: 100%;
+}
+
+.club-text{
+  padding: 100px 40px 0 120px;
+  width: 674.5px;
+  height: 449.34px;
+}
+
+.club-text h2{
+  font-size: 40px;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.club-p{
+  margin: 0 0 20px;
+}
+
+.club-p p{
+  font-size: 20px;
+  font-family: 'Manrope', sans-serif;
+  margin: 0 0 14.4px;
+}
+
+.clubs-other{
+  display: flex;
+  width: 100%;
+}
+
+.club-text-other{
+  padding: 100px 40px 0 120px;
+  width: 674.5px;
+  height: 449.34px;
+}
+
+.club-text-other h2{
+  font-size: 40px;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.nile-on{
+  margin: 150px 0 100px;
+}
+
+.nile-on h2{
+  position: relative;
+  left: 60px;
+  font-size: 40px;
+  font-family: 'Gilda display', sans-serif;
+}
+
+.final-footer{
+  display: flex;
+  width: 100%;
+  height: 520.09px;
+  padding: 100px 110px 50px;
+  background: #1c4da1;
+}
+
+.socials{
+  padding: 10px;
+}
+
+.nile-address{
+  display: flex;
+  padding: 7px 0 30px;
+  margin: 0 0 10px;
+  width: 732.66px;
+  height: 136px;
+  border-bottom: 1px solid #dcd5c6;
+}
+
+.nile-main-address{
+  display: flex;
+  position: relative;
+  top: 30px;
+  padding: 10px;
+}
+
+.nile-main-address p{
+  font-size: 16px;
+  font-family: 'Gilda display', sans-serif;
+  width: 348.95px;
+  height: 84px;
+  color: white;
+}
+
+.nile-phone{
+  display: flex;
+  position: relative;
+  top: 40px;
+}
+
+.nile-phone a{
+  font-size: 16px;
+  font-family: 'Gilda display', sans-serif;
+  color: white !important;
+}
+
+.nile-social-tabs{
+  margin: 0 0 20px !important;
+}
+
+.tabs{
+  padding-left: 0 !important;
+  display: flex;
+}
+
+.tabs li{
+  padding: 13px 0;
+  font-size: 16px;
+  font-family: 'Manrope', sans-serif;
+  color: white;
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+.social-tags{
+  width: 732.66px;
+  height: 25px;
+}
+
+.tags{
+  margin-left: 30px;
+}
+
+.other-feats{
+  width: 376px;
+  height: 370px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feat-group{
+  padding: 13px 20px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  color: white;
+  border-left: 1px solid #dcd5c6;
+}
+
+.end-nigga{
+  width: 100%;
+  height: 92.39px;
+  padding: 0 120px;
+  background-color: #3a64ad;
+}
+
+.fonile{
+  position: relative;
+  top: 30px;
+}
+
+.fonile p{
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  color: white;
+}
+
+.grow{
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  -webkit-transition: top ease 0.5s;
+  -moz-transition: top ease 0.5s;
+  -ms-transition: top ease 0.5s;
+  -o-transition: top ease 0.5s;
+}
+.grow:hover{
+  top: -10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
